@@ -1,0 +1,106 @@
+/* Chat Main Container */
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  text-align: center;
+  background-color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+.chat-app {
+  padding-top: 5em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+  padding: 20px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.user {
+  background-color: #AEA057;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.assistant {
+  background-color: #077b05;
+  color: #fff;
+}
+
+/* Assistant Message Styling */
+.assistant-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Chat Input Container */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+/* Input Field Styling */
+input[type="text"] input[type="email"] input[type="password"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  outline: none;
+}
+
+/* Send Button Styling */
+.send-btn button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-btn button:hover {
+  background-color: #0056b3;
+}
+
+.user-p{
+  text-align: left;
+  margin-bottom: 1px;
+  font-size: 80%;
+  color: #AEA057;
+}
+
+.assistant-p{
+  text-align: right;
+  margin-bottom: 1px;
+  font-size: 80%;
+  color: #077b05;
+}
