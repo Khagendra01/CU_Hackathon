@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import "./styles/quizMenu.css";
-import Navbar from "../components/navbar";
-import DisplayCourse from "../components/displayCourse";
-import Quiz from "../components/quiz";
+import "../styles/quizMenu.css";
+import Navbar from "../reusables/navbar";
+import DisplayCourse from "../reusables/displayCourse";
+import Quiz from "../reusables/quiz";
 
 function QuizMenu() {
   const [display, setDisplay] = useState(true);

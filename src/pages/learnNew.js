@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/navbar';
+import Navbar from '../reusables/navbar';
 
-import "./styles/learnNew.css"; 
+import "../styles/learnNew.css"; 
 import { sendExplore } from '../api/aiApi';
 
 function LearnNew(props) {

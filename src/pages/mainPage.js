@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Navbar from '../components/navbar';
+import Navbar from '../reusables/navbar';
 
 
-import "./styles/MainPage.css"; // Import the CSS file for styling
+import "../styles/MainPage.css"; // Import the CSS file for styling
 import { AuthContext } from "../App";
 
 
@@ -31,9 +31,6 @@ function MainPage() {
       <div className="button-container">
         <button onClick={() => handleNavigation("/chatPlace")} className="big-button">
           Convo with AI
-        </button>
-        <button onClick={() => handleNavigation("/noteMenu")} className="big-button">
-          Take my Note
         </button>
         <button onClick={() => handleNavigation("/quizMenu")} className="big-button">
           Take the Quiz

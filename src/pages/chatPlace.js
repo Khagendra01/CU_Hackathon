@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 
 
-import "./styles/ChatApp.css";
-import Navbar from '../components/navbar';
+import "../styles/ChatApp.css";
+import Navbar from '../reusables/navbar';
 
-import { sendMessage } from "../api/aiApi";
+import { sendMessage } from "../api/aiApi"
 import Load from '../images/loader.gif';
 import { AuthContext } from "../App";
 

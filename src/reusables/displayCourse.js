@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 
-import "./styles/displayCourse.css";
+import "../styles/displayCourse.css";
 import { useNavigate } from "react-router-dom";
 import { SubjectContext } from "../wrapper/addSubject";
 import { AuthContext } from "../App";
@@ -15,24 +15,9 @@ function DisplayCourse(props) {
 
   const getCardStyles = (displayType) => {
     switch (displayType) {
-      case "Note Menu":
-        return {
-          backgroundColor: "lightblue",
-          color: "black",
-        };
       case "Quiz Menu":
         return {
-          backgroundColor: "lightgreen",
-          color: "black",
-        };
-      case "Exam Preparation":
-        return {
-          backgroundColor: "lightcoral",
-          color: "white",
-        };
-      default:
-        return {
-          backgroundColor: "gray",
+          backgroundColor: "#AEA057",
           color: "black",
         };
     }

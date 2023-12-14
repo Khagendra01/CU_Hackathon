@@ -45,7 +45,7 @@
   .register-btn button {
     width: 100%;
     padding: 10px;
-    background-color: #001f3f;
+    background-color: #D01C2E;
     color: #fff;
     border: none;
     transition: background-color 0.2s;
@@ -59,7 +59,7 @@
   .sign-in-button button {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #001f3f;
+    background-color: #D01C2E;
     
     border: none;
     border-radius: 5px;
@@ -73,7 +73,7 @@
   .register-button button {
     margin-top: 1em;
     padding: 5px 20px;
-    background-color: #FFA500; 
+    background-color: #AEA057; 
     margin-left: 10px;
     width: 100%;
     color: #fff;

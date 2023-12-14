@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
-import SignInPrompt from '../components/login';
-import MainPage from '../views/mainPage';
-import ChatApp from '../views/chatPlace';
-import QuizMenu from '../views/quizMenu';
-import Profile from '../views/profile';
+import SignInPrompt from '../reusables/login';
+import MainPage from '../pages/mainPage';
+import ChatApp from '../pages/chatPlace';
+import QuizMenu from '../pages/quizMenu';
+import Profile from '../pages/profile';
 import { AuthContext } from '../App';
-import RegisterPrompt from '../components/Register';
-import NoteMenu from '../views/noteMenu';
+import RegisterPrompt from '../reusables/Register';
 
-import LearnNew from '../views/learnNew';
-import NoteEditor from '../components/Notes/NoteEditor';
+
+import LearnNew from '../pages/learnNew';
 
 const RouteConfig= () => {
     const { user } = useContext(AuthContext);
@@ -25,7 +24,6 @@ const RouteConfig= () => {
           <Route path="/register" element={!user ? <RegisterPrompt /> : <Navigate to='/' />} />
           <Route path="/login" element={!user ? <SignInPrompt /> : <Navigate to='/' />} />
           <Route path="/learnNew" element={<LearnNew /> } />
-          <Route path ="/:courseId/notes/:id" element = {user ? <NoteEditor /> : <Navigate to='/' />} />
         </Routes>
       </BrowserRouter>
     );

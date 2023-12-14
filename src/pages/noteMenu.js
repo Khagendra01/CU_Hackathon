@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import "./styles/noteMenu.css";
-import Navbar from "../components/navbar";
-import DisplayCourse from "../components/displayCourse";
-import DisplayNote from "../components/Notes/displayNote";
-import { useLocation } from "react-router-dom";
+import "../styles/noteMenu.css";
+import Navbar from "./reusables/navbar";
+import DisplayCourse from "./reusabless/displayCourse";
+import DisplayNote from "./Notes/displayNote";
+
 
 function Note() {
   const [display, setDisplay] = useState(true);

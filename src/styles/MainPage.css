@@ -26,9 +26,11 @@
 
 .button-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  position: relative;
 }
+
 
 .big-button {
   background-color: #AEA057;

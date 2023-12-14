@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
-import "./styles/profile.css";
-import Navbar from "../components/navbar";
+import "../styles/profile.css";
+import Navbar from "../reusables/navbar";
 import { AuthContext } from "../App";
 import { SubjectContext } from "../wrapper/addSubject";
 
